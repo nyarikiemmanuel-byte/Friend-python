@@ -1,0 +1,28 @@
+class Friend:
+    # Python uses __init__ as the constructor
+    # The 'self' parameter refers to the instance of the object
+    def __init__(self, n, a):
+        # Attributes
+        self.name = n
+        self.age = a
+
+    # Behavior: Display friend's info
+    def display_info(self):
+        print(f"Name: {self.name}")
+        print(f"Age: {self.age}")
+
+    # Behavior: Greet
+    def greet(self):
+        print(f"{self.name} says: Hello!")
+
+# Creating an object of Friend class
+myFriend = Friend("Musa", 20)
+
+# Using object to call behaviors
+myFriend.display_info()
+myFriend.greet()
+
+# Expected output:
+# Name: Musa
+# Age: 20
+# Musa says: Hello!
